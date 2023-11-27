@@ -1,5 +1,5 @@
 # Overview
-**J1708_T4** is a gateway utility library that is compatible with the [Teensy 4.x](https://www.pjrc.com/store/teensy40.html). It provides basic tools for displaying, measuring, and sending traffic on an SAE J1708 bus. This code was written as part of my [Master's Thesis](#References) on securing legacy HD networks.
+**J1708_T4** is a gateway utility library that is compatible with the [Teensy 4.x](https://www.pjrc.com/store/teensy40.html). It provides basic tools for displaying, measuring, and sending traffic on an SAE J1708 bus. This code was written as part of David Nnaji's [Master's Thesis](#References) on securing legacy HD networks.
 
 # Manual Installation
 To install the library manually, you'll need to download it as a .zip file, extract it and put in the proper Arduino user library directory. The .zip file contains all you need, including a few examples on how to use it. If the library is installed properly, you should be able to see these examples in `File>Examples>J1708_T4`. 
@@ -15,7 +15,7 @@ You'll need to incorporate a standard J1708 circuit with the Teensy 4.x to recei
 - (2x) 47 ohm resistors
 - (Optional) LEDs
 
-You can refer to the official standard or my own circuit implementation for inspiration.
+You can refer to the official standard or David Nnaji's circuit implementation for inspiration.
 
 # Design
 The entire library revolves around a `J1708` object that is intended to represent a single port connection to the bus. This object is logically bound to a Teensy serial port on the of the users choice. All example use ports 3 and 4 by default to help avoid conflicts. 
@@ -94,7 +94,7 @@ myTeensy.close()
 [MS Thesis] - (Currently embargoed. To be published 8/22/23)
 
 # Limitations 
-I'm a mechanical engineer doing programmer things. After writing this, I learned *how to* and *how to not* do stuff in C/C++. Bear in mind, even though my code has been unit tested, reviewed, and deployed on actual vehicle hardware, my code would certainly benefit from many more improvements. If you are interested in contributing, feel free to start an issue or reach out to me anytime!
+A note from David: I'm a mechanical engineer doing programmer things. After writing this, I learned *how to* and *how to not* do stuff in C/C++. Bear in mind, even though my code has been unit tested, reviewed, and deployed on actual vehicle hardware, my code would certainly benefit from many more improvements. If you are interested in contributing, feel free to start an issue or reach out to me anytime!
 
 
 > ⚠️ **TL;DR** Be warned - the performance of this library is limited.
